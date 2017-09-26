@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Demo</title>
+
+</head>
+<body>
+    
+    <div id="module"></div>
+    <div id="inline"></div>
+
+    <script type="module">
+        // No syntax highlighting
+        import abc from './lib.js';
+        document.getElementById('module').textContent = abc;
+    </script>
+
+    <script type="text/javascript">
+        // Yes syntax highlighting
+        const abc = 'bar';
+        document.getElementById('inline').textContent = abc;
+    </script>
+</body>
+</html>
