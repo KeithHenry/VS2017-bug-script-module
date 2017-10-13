@@ -14,12 +14,14 @@
     <script type="module">
         // No syntax highlighting
         import abc from './lib.js';
+        const literal = `some text ${abc} more text`;
         document.getElementById('module').textContent = abc;
     </script>
 
     <script type="text/javascript">
         // Yes syntax highlighting
         const abc = 'bar';
+        const literal = `some text ${abc} more text`;
         document.getElementById('inline').textContent = abc;
     </script>
 </body>
